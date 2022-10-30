@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RichyMVVM.ApplicationCode.Views.SecondView"
+             Title="SecondView">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to SecondView!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="50"
+            Padding="0,100,0,0"/>
+        <Label 
+            Text="{Binding UserValue,FallbackValue='No UserValue has been set yet'}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            BackgroundColor="Red"
+            Padding="0,100,0,0"
+            />
+
+
+        <Button Text="Change page" Command="{Binding ChangePageCommand}"  Padding="0,100,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>

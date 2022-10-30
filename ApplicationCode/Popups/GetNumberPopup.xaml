@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ctx:Popup  xmlns:ctx="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RichyMVVM.ApplicationCode.Popups.GetNumberPopup" >
+    <VerticalStackLayout>
+        <Label 
+            Text="GetNumberPopup Showing!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="20"/>
+        <HorizontalStackLayout>
+            <Label Text="Enter a number:"></Label>
+            <Entry Text="{Binding UserValue}"  BackgroundColor="LightBlue"/>
+        </HorizontalStackLayout>
+        <Button Text="Close Popup" Command="{Binding ClosePopupCommand}" />
+    </VerticalStackLayout>
+</ctx:Popup>
